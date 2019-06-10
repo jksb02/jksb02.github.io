@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		li{
+			list-style:none;
+		}
+		.dropdown{
+			display:inline-block;
+		}
+		.dropdowncontents{
+			display:none;
+			background-color:white;
+     		position:absolute;
+			width:100px;
+			padding:12px 16px;
+		}
+		.dropdown:hover .dropdowncontents{
+			display:block;
+		}
+		#logo{
+			margin:20px;
+			float:left;
+			font-weight:bold;
+		}
+		#top{
+			float:right;
+			margin:30px 20px 0 0;
+		    font-size:10pt;
+		}
+		#page{
+			width:1000px;
+			margin:auto;
+			//border:solid 1px red;
+		}
+		header{
+			width:1000px;
+			height:100px;
+			margin-top:10px;
+			border:solid 1px;
+			background-color:skyblue;
+		}
+		section{
+			float:left;
+			margin-top:10px;
+			border:solid 1px;
+		}
+		footer{
+			width:1000px;
+			height:300px;
+			margin-top:10px;
+		}
+		#search{
+			float:left;
+			margin:30px 0px 0px 300px;
+		}
+		#email{
+			float:right;
+			margin:30px 0 0 180px;
+		}
+	</style>
+	<title>동물 갤러리에 오신 것을 환영합니다.</title>
+</head>
+<body>		
+	<div id='page'>
+	<header>
+		<div id='logo'>
+			동물 갤러리
+		</div>
+		<div id='top'>
+			로그인 ㅣ 회원가입 ㅣ 마이페이지 ㅣ 고객센터
+		</div>
+	</header>
+<section>
+		<img src='./img/sleep.JPG' width="775">
+</section>
+<div class='dropdown'>
+<ul>포유류
+	<div class='dropdowncontents'>
+	<li>강아지</li>
+	<li>고양이</li>
+	<li>기타</li>
+</ul></div></div>
+<div class='dropdown'>
+<ul>그외 척추동물
+	<div class='dropdowncontents'>
+	<li>조류</li>
+	<li>어류</li>
+	<li>파충류</li>
+	<li>양서류</li>
+</ul></div></div>
+<br>
+<div class='dropdown'>
+<ul>곤충
+	<div class='dropdowncontents'>
+	<li>갑충</li>
+	<li>기타</li>
+</ul></div></div>
+<br>
+<div class='dropdown'>
+<ul>절지류
+	<div class='dropdowncontents'>
+	<li>거미</li>
+	<li>전갈</li>
+	<li>지네</li>
+	<li>기타</li>
+</ul></div></div>
+<br>
+<footer>
+	<div id='email'>
+			운영자 email: jksb02@naver.com
+	</div>
+</footer>
+</body>
+</html>
+
