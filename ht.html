@@ -3,61 +3,24 @@
 <head>
 	<title></title>
 	<style>
-		header{
-			width:1000px;
-			height:200px;
-			margin-top:10px;
-			border:solid 1px;
-		}
 		.transition{
-			background-color: pink;
-			width:10px;
-			height:20px;
+			background-color: red;
+			width:200px;
+			height:100px;
 			transition-duration:1s;
 		}
 		.transition:hover{
-			width:400px;
-		}
-		#logo{
-				margin:20px;
-				float:left;
-		}
-		#top1{
-			float:left;
-			margin:65px 0px 0px -24px;
-		}
-		#top2{
-			font-weight:bold;
-			float:right;
-			margin:30px 20px 0px 0px;
-		}
-		.transform{
-			color:black;
-			background-color: yellow;
-			width:300px;
-			height: 100px;
-			transform:rotate(5deg);
-			margin-top: 50px;
+			background-color: blue;
 		}
 	</style>
 </head>
 <body>
-<header>
-		<div id='logo'>
-		<img src='./img/carr.JPG' width='250px'>
-		</div>
-		
-		<div id='top1'>
-		<div class='transition'>
-		</div>
-	    
-	    </div>
-	    <div class='transform'>
-<fieldset>
-	아이디<input type=text><br>
-	비밀번호<input type=password><br>
-	<input type='button' value='로그인'>
-</fieldset>
-</header>
+<div class='transition'>
+	<fieldset>
+	아이디를 정하시오<input type=text><input type='button' value='중복 검사'><br>
+	비밀번호를 정하시오<input type=password><br>
+	<input type='button' value='계정 생성'>
+	</fieldset>
+</div>
 </body>
 </html>
