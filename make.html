@@ -3,24 +3,137 @@
 <head>
 	<title></title>
 	<style>
-		.transition{
-			background-color: red;
-			width:200px;
-			height:150px;
-			transition-duration:1s;
+		table{
+			height: 300px;
+			border: #f6bb9e 2px solid;
+			border-collapse: collapse;
 		}
-		.transition:hover{
-			background-color: blue;
+		td{
+			padding: 5px 10px;
+			border: #f6bb9e 1px solid;
+		}
+		th{
+			width: 10em;
+			background-color: #ffeeee;
+			text-align: left;
+		}
+		textarea{
+			width: 600px;
+			height: 100px;
+			padding: 5px;
+			border: #ccc 1px solid;
+		}
+		input[type="text"]{
+			width: 200px;
+			padding: 5px;
+			border: #ccc 1px dotted;
+		}
+		input[type="radio"],
+		input[type="reset"],
+		input[type="submit"]
+		{
+			cursor: pointer;
+		}
+		textarea:focus{
+			background-color: skyblue;
+		}
+		input:focus{
+			background-color: skyblue;
+		}
+		.btns{
+			margin: 30px;
+			margin-left: 100px;
+		}
+		.btn{
+			width: 100px;
+			margin: 0 10px;
+			padding: 10px;
+			border: none;
+			font-size: 16px;
+		}
+		.btn:hover{
+			opacity: 0.5;
+		}
+		.btn:active{
+			color: red;
+		}
+		.btn-clear{
+			background-color: #ccc;
+		}
+		.btn-send{
+			background-color: #f6bb9e;
+		}
+		#logo{
+			margin:20px;
+			float:left;
+			font-weight:bold;
+		}
+		#top{
+			float:right;
+			margin:30px 20px 0 0;
+		    font-size:10pt;
+		}
+		header{
+			width:1000px;
+			height:100px;
+			margin-top:10px;
+			border:solid 1px;
+			background-color:skyblue;
+		}
+		.transform{
+			color:black;
+			width:300px;
+			height: 90px;
+			transform:rotate(5deg);
+			margin-top: 50px;
 		}
 	</style>
 </head>
 <body>
-<div class='transition'>
-	<fieldset>
-	아이디를 정하시오<input type=text><input type='button' value='중복 검사'><br>
-	비밀번호를 정하시오<input type=password><br>
-	<input type='button' value='계정 생성'>
-	</fieldset>
-</div>
+	<header>
+		<div id='logo'>
+			동물 갤러리
+		</div>
+		<div id='top'>
+			<a href='login.html'>로그인</a> ㅣ<a href='make.html'>회원가입</a>
+		</div>
+	</header>
+	<h2>회원가입 양식</h2>
+	필요한 사항을 기입한 후 가입 버튼을 눌러주시오.<p>
+<table border=1>
+	<tr>
+	<th>이름: </th>
+	<td><input type="text"></td>
+	</tr>
+
+	<tr>
+	<th>주소: </th>
+	<td><input type="text"></td>
+	</tr>
+
+	<tr>
+	<th>프로필 사진: </th>
+	<td><input type="file" name="fi"></td>
+	</tr>
+
+	<tr>
+	<th>아이디: </th>
+	<td><input type="text"><input type='button' value='중복 검사'></td>
+	</tr>
+
+	<tr>
+	<th>비밀번호: </th>
+	<td><input type="text"></td>
+	</tr>
+
+	<tr>
+	<th>E메일 주소: </th>
+	<td><input type="text"></td>
+	</tr>
+</table>
+	<div class="btns">
+	<button type="reset" value="취소" class="btn btn-clear">취소</button>
+	<button type="submit" value="투고" class="btn btn-send">가입</button>
+	</div>
 </body>
 </html>
