@@ -3,9 +3,25 @@
 <head>
 	<title></title>
 	<style>
-	.transform{
+		#logo{
+			margin:20px;
+			float:left;
+			font-weight:bold;
+		}
+		#top{
+			float:right;
+			margin:30px 20px 0 0;
+		    font-size:10pt;
+		}
+		header{
+			width:1000px;
+			height:100px;
+			margin-top:10px;
+			border:solid 1px;
+			background-color:skyblue;
+		}
+		.transform{
 			color:black;
-			background-color: yellow;
 			width:300px;
 			height: 90px;
 			transform:rotate(5deg);
@@ -14,6 +30,15 @@
 	</style>
 </head>
 <body>
+<div id='page'>
+	<header>
+		<div id='logo'>
+			동물 갤러리
+		</div>
+		<div id='top'>
+			<a href='login.html'>로그인</a> ㅣ<a href='make.html'>회원가입</a>
+		</div>
+	</header>
 <div class='transform'>
 <fieldset>
 	아이디<input type=text><br>
