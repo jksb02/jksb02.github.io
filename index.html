@@ -58,6 +58,23 @@
 			float:right;
 			margin:30px 0 0 180px;
 		}
+		#menubar{
+		background:skyblue;
+	}
+	#menubar ul{
+		margin:0;
+		padding:0;
+		width:400px;
+	}
+	#menubar ul li{
+		display:inline;
+		list-style-type: none;
+		padding: 0px 15px;
+	}
+	#menubar ul li a{
+		color: white;
+		text-decoration:none;
+	}
 	</style>
 	<title>동물 갤러리에 오신 것을 환영합니다.</title>
 </head>
@@ -74,6 +91,8 @@
 <section>
 		<img src='./img/sleep.JPG' width="775">
 </section>
+		<nav id='menubar'>
+		<ul>
 <div class='dropdown'>
 <ul>포유류
 	<div class='dropdowncontents'>
@@ -105,6 +124,7 @@
 	<li>지네</li>
 	<li>기타</li>
 </ul></div></div>
+			</ul>
 <footer>
 	<div id='email'>
 			운영자 email: jksb02@naver.com
